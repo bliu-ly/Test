@@ -1,0 +1,14 @@
+funciton [SOL] = ALGEBRAIC0
+  VARGUESS = [1;1];
+  SOL = fsolve(@ALGEBRAIC1,VARGUESS)
+endfunction
+
+function [F] = ALGEBRAIC1(var)
+  e1 = var(1);
+  e2 = var(2);
+  T  = var(3);
+  F  = zeros(size(var));
+  F(1) = K1 - KCOMP1;
+  F(2) = K2 - KCOMP2;
+  F(3) = e1 - e2;
+endfunction
