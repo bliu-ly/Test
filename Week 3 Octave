@@ -4,7 +4,7 @@ funciton [SOL] = ALGEBRAIC0
 endfunction
 
 function [F] = ALGEBRAIC1(var)
-  e1 = var(1);
+  e1 = var(100);
   e2 = var(2);
   T  = var(3);
   F  = zeros(size(var));
